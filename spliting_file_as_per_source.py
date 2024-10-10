@@ -34,7 +34,7 @@ class DataFrameSplitter:
             self.save_chunks(chunks, city, level, output_path)
 
     def save_chunks(self, chunks, city, level, output_path):
-        for i in range(min(5, len(chunks))):
+        for i in range(min(0,len(chunks):
             if level == 1:
                 output_file = os.path.join(output_path, f'{city}_HNI_Level_{level}_batch_{5+i}.xlsx')
             elif level == 2:
